@@ -191,7 +191,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shiraishi:Hello
+  m_Text: Shira-ko:Hello
 --- !u!222 &162772102
 CanvasRenderer:
   m_ObjectHideFlags: 0
