@@ -283,7 +283,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hello
+  m_Text: x=0, y=0, z=0
 --- !u!222 &162772102
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -732,8 +732,8 @@ GameObject:
   - component: {fileID: 1377300420}
   - component: {fileID: 1377300419}
   - component: {fileID: 1377300418}
-  - component: {fileID: 1377300422}
   - component: {fileID: 1377300423}
+  - component: {fileID: 1377300422}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -815,7 +815,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1377300422
+--- !u!114 &1377300422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377300417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a19e85746160424aa115cc3d83a68ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DebugText: {fileID: 162772101}
+--- !u!54 &1377300423
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -831,19 +844,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1377300423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377300417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a19e85746160424aa115cc3d83a68ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DebugText: {fileID: 162772101}
 --- !u!1 &1489283845
 GameObject:
   m_ObjectHideFlags: 0
