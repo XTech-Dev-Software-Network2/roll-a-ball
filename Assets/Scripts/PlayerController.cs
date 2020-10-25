@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody _rigidbody;
     public List<GameObject> ActiveWhenFinish = new List<GameObject>();
-    
     private void Awake() 
     {
         _rigidbody = GetComponent<Rigidbody>();
@@ -18,9 +17,15 @@ public class PlayerController : MonoBehaviour
 
     void Update() // 毎フレーム呼ばれる
     {
-        
-        var force = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-        _rigidbody.AddForce(5*force);
+        if (!(Camera.main is null))
+        {
+            var t = Camera.main.transform;
+            var right = Input.GetAxis("Horizontal")*t.right;
+            var forward = Input.GetAxis("Vertical")*t.forward;
+            var force = right + forward;
+            force.y = 0.0f;
+            _rigidbody.AddForce(10*force);    
+        }
     }
     
     void OnTriggerEnter(Collider other)
