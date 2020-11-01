@@ -384,7 +384,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21294
+  m_Name: pb_Mesh14920
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -781,8 +781,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626828042}
-  m_LocalRotation: {x: 0.1811808, y: 0.49234864, z: -0.10559729, w: 0.84475774}
-  m_LocalPosition: {x: 1, y: 10, z: 5}
+  m_LocalRotation: {x: 0.1543091, y: -0.52821916, z: 0.098302886, w: 0.8291621}
+  m_LocalPosition: {x: 31, y: 10, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -849,7 +849,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: aa17b940274874888855c14ade697194, type: 2}
   m_InitialState: 1
-  m_WrapMode: 2
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -40382,7 +40382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 978476581}
-  m_PathPosition: 0
+  m_PathPosition: 1
   m_PositionUnits: 0
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -40521,7 +40521,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705516809}
-  m_LocalRotation: {x: 0.1811808, y: 0.49234864, z: -0.10559729, w: 0.84475774}
+  m_LocalRotation: {x: 0.1543091, y: -0.52821916, z: 0.098302886, w: 0.8291621}
   m_LocalPosition: {x: 14.545745, y: 4, z: -2.3267212}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
