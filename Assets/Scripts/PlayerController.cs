@@ -1,23 +1,33 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody _rigidbody;
-    public List<GameObject> ActiveWhenFinish = new List<GameObject>();
+    public bool quickStart = true;
+    public bool quickFinish = true;
+    public List<GameObject> ActiveWhenStart;
+    public List<GameObject> ActiveWhenFinish;
+    
+    public bool isPlaying = true;
     private void Awake() 
     {
         _rigidbody = GetComponent<Rigidbody>();
-        foreach (var obj in ActiveWhenFinish)
-        {
-            obj.SetActive(false);
-        }
+    }
+
+    private void Start()
+    {
+        if(quickStart) PlayerStart();
+        foreach (var elem in ActiveWhenStart) elem.SetActive(true);
+        foreach (var elem in ActiveWhenFinish) elem.SetActive(false);   
     }
 
     void Update() // 毎フレーム呼ばれる
     {
-        if (!(Camera.main is null))
+        if (!(Camera.main is null) && isPlaying)
         {
             var t = Camera.main.transform;
             var right = Input.GetAxis("Horizontal")*t.right;
@@ -27,17 +37,25 @@ public class PlayerController : MonoBehaviour
             _rigidbody.AddForce(10*force);    
         }
     }
-    
+
+    public void PlayerStart()
+    {
+        Debug.Log("PlayerStart");
+        isPlaying = true;
+        if (GameInstance.Instance) GameInstance.Instance.PlayerStart();
+    }
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Finish"))
         {
-            Debug.Log("Finish");
-            foreach (var obj in ActiveWhenFinish)
-            {
-                obj.SetActive(true);
-            }
+            isPlaying = false;
+            foreach (var elem in ActiveWhenFinish) elem.SetActive(true);
+            if(quickFinish) PlayerFinish();
         }
     }
-
+    public void PlayerFinish()
+    {
+        Debug.Log("PlayerFinish");
+        if (GameInstance.Instance) GameInstance.Instance.OnSceneFinish(gameObject.scene);
+    }
 }
