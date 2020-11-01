@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public bool quickFinish = true;
     public List<GameObject> ActiveWhenStart;
     public List<GameObject> ActiveWhenFinish;
+    private Vector3 playerStart = Vector3.zero;
     
     public bool isPlaying = true;
     private void Awake() 
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        playerStart = transform.position;
         if(quickStart) PlayerStart();
         foreach (var elem in ActiveWhenStart) elem.SetActive(true);
         foreach (var elem in ActiveWhenFinish) elem.SetActive(false);   
@@ -52,6 +54,11 @@ public class PlayerController : MonoBehaviour
             foreach (var elem in ActiveWhenFinish) elem.SetActive(true);
             if(quickFinish) PlayerFinish();
         }
+        else if (other.gameObject.CompareTag("Respawn"))
+        {
+            this.transform.position = playerStart;
+        }
+        
     }
     public void PlayerFinish()
     {
