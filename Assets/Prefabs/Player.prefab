@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1681112495325792571}
   - component: {fileID: 1681112495325792570}
   - component: {fileID: 1681112495325792569}
+  - component: {fileID: 524739562}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -107,6 +108,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 690f5dfdbcd4841efa16474cbd2c8426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  quickStart: 0
+  quickFinish: 0
+  ActiveWhenStart: []
+  ActiveWhenFinish: []
+  isPlaying: 0
 --- !u!54 &1681112495325792569
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -123,3 +129,46 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &524739562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681112495325792568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: f053f24d8e0704d70aa3c8f4bb5ff601, type: 2}
+    - {fileID: 11400000, guid: acbd5a0db93ec4699bf8dcf895f36507, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1681112495325792570}
+          m_MethodName: PlayerStart
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1681112495325792570}
+          m_MethodName: PlayerFinish
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

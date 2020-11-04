@@ -49256,6 +49256,16 @@ PrefabInstance:
       propertyPath: ActiveWhenFinish.Array.data[0]
       value: 
       objectReference: {fileID: 1008353186}
+    - target: {fileID: 1681112495325792570, guid: 293669b11d180409e8481a04e8d083dc,
+        type: 3}
+      propertyPath: quickStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681112495325792570, guid: 293669b11d180409e8481a04e8d083dc,
+        type: 3}
+      propertyPath: quickFinish
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 293669b11d180409e8481a04e8d083dc, type: 3}
 --- !u!1 &1404554676
