@@ -171,8 +171,20 @@ MonoBehaviour:
   - SceneName: hello
     difficulty: 4
     isCleared: 1
-  - SceneName: hello
+  - SceneName: higashi
     difficulty: 2
+    isCleared: 0
+  - SceneName: Kadoya
+    difficulty: 1
+    isCleared: 0
+  - SceneName: noda
+    difficulty: 1
+    isCleared: 0
+  - SceneName: shiraiScene
+    difficulty: 1
+    isCleared: 0
+  - SceneName: asada
+    difficulty: 1
     isCleared: 0
   MenuSceneName: Menu
   PersistentSceneAssets: {fileID: 102900000, guid: bc67df5f68dd44715a409d4fb705d893,
@@ -181,4 +193,8 @@ MonoBehaviour:
   SceneAssets:
   - {fileID: 102900000, guid: dc53fe315f9d54188924b36b47f647aa, type: 3}
   - {fileID: 102900000, guid: 557155893585a41ebac56041ee268eb6, type: 3}
-  - {fileID: 102900000, guid: 557155893585a41ebac56041ee268eb6, type: 3}
+  - {fileID: 102900000, guid: 3a1b439f3e1344f8ebd9c5bf62e5dea4, type: 3}
+  - {fileID: 102900000, guid: 176fd4b62472d49a890260de5d2ebb1c, type: 3}
+  - {fileID: 102900000, guid: d88451a453e8f41cb8151470387dc2bd, type: 3}
+  - {fileID: 102900000, guid: 9ef39480455274dfdab75fa326aab9ab, type: 3}
+  - {fileID: 102900000, guid: 9988eba463aa744c38257e1f2339b881, type: 3}
