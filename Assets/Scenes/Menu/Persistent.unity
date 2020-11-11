@@ -170,12 +170,11 @@ MonoBehaviour:
     isCleared: 1
   - SceneName: hello
     difficulty: 4
-    isCleared: 0
+    isCleared: 1
   - SceneName: hello
-    difficulty: 1
+    difficulty: 2
     isCleared: 0
   MenuSceneName: Menu
-  CurrentScene: 
   PersistentSceneAssets: {fileID: 102900000, guid: bc67df5f68dd44715a409d4fb705d893,
     type: 3}
   MenuSceneAssets: {fileID: 102900000, guid: ce3cd7f95ec9242e1b5c4635f0030bd7, type: 3}

@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ProGrids/Demo.unity
     guid: dc53fe315f9d54188924b36b47f647aa
   - enabled: 1
-    path: Assets/Scenes/ProGrids/Kadoya.unity
-    guid: 176fd4b62472d49a890260de5d2ebb1c
-  - enabled: 1
     path: Assets/Scenes/ProGrids/hello.unity
     guid: 557155893585a41ebac56041ee268eb6
   - enabled: 1
